@@ -1,4 +1,4 @@
-package com.example.patterns.creational.prototype.without_pattern.game;
+package com.example.patterns.creational.prototype.without_pattern;
 
 import com.example.patterns.creational.prototype.without_pattern.company.Code;
 

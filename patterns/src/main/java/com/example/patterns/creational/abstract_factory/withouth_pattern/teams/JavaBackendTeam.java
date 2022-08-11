@@ -27,10 +27,10 @@ public class JavaBackendTeam {
     }
 
     private void workInSprint(int i) {
-        System.out.printf("Sprint #%d started\n", i);
+        System.out.printf("Sprint #%d started\n\n", i);
         backendBusinessAnalyst.analyzeBackendRequirements();
         javaDeveloper.writeJavaCode();
         backendQA.testBackend();
-        System.out.printf("Sprint #%d ended\n", i);
+        System.out.printf("Sprint #%d ended\n\n", i);
     }
 }

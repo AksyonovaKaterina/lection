@@ -3,9 +3,8 @@ package com.example.patterns.creational.abstract_factory.with_pattern.teamFactor
 import com.example.patterns.creational.abstract_factory.with_pattern.business_analysts.BusinessAnalyst;
 import com.example.patterns.creational.abstract_factory.with_pattern.developers.Developer;
 import com.example.patterns.creational.abstract_factory.with_pattern.qa.QA;
+import com.example.patterns.creational.abstract_factory.with_pattern.teams.Team;
 
 public interface TeamFactory {
-    Developer getDeveloper();
-    QA getQA();
-    BusinessAnalyst getAnalyst();
+    Team getTeam();
 }

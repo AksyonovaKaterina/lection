@@ -6,22 +6,13 @@ import com.example.patterns.creational.abstract_factory.with_pattern.developers.
 import com.example.patterns.creational.abstract_factory.with_pattern.developers.KotlinDeveloper;
 import com.example.patterns.creational.abstract_factory.with_pattern.qa.BackendQA;
 import com.example.patterns.creational.abstract_factory.with_pattern.qa.QA;
+import com.example.patterns.creational.abstract_factory.with_pattern.teams.KotlinBackendTeam;
+import com.example.patterns.creational.abstract_factory.with_pattern.teams.Team;
 
 public class KotlinBackendTeamFactory implements TeamFactory{
 
     @Override
-    public Developer getDeveloper() {
-        return new KotlinDeveloper();
+    public Team getTeam() {
+        return new KotlinBackendTeam(new KotlinDeveloper(), new BackendQA(), new BackendBusinessAnalyst());
     }
-
-    @Override
-    public QA getQA() {
-        return new BackendQA();
-    }
-
-    @Override
-    public BusinessAnalyst getAnalyst() {
-        return new BackendBusinessAnalyst();
-    }
-
 }

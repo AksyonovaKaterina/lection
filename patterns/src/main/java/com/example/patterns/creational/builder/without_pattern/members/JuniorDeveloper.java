@@ -1,5 +1,15 @@
 package com.example.patterns.creational.builder.without_pattern.members;
 
-public class JuniorDeveloper {
+import java.util.UUID;
 
+public class JuniorDeveloper {
+    private final UUID id;
+
+    public JuniorDeveloper(UUID id) {
+        this.id = id;
+    }
+
+    public void sayHello() {
+        System.out.println("I'm junior backend developer");
+    }
 }

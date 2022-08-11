@@ -13,11 +13,10 @@ public class KotlinBackendTeam implements Team {
     private QA qa;
     private BusinessAnalyst analyst;
 
-    public KotlinBackendTeam() {
-        TeamFactory factory = new KotlinBackendTeamFactory();
-        developer = factory.getDeveloper();
-        qa = factory.getQA();
-        analyst = factory.getAnalyst();
+    public KotlinBackendTeam(Developer developer, QA qa, BusinessAnalyst analyst) {
+        this.developer = developer;
+        this.qa = qa;
+        this.analyst = analyst;
     }
 
     public void developApp() {
@@ -31,6 +30,6 @@ public class KotlinBackendTeam implements Team {
         developer.writeCode();
         analyst.analyzeRequirements();
         qa.test();
-        System.out.printf("Sprint #%d ended\n", i);
+        System.out.printf("Sprint #%d ended\n\n", i);
     }
 }

@@ -3,10 +3,11 @@ package com.example.patterns.creational.factory_method.with_pattern.developer_fa
 import com.example.patterns.creational.factory_method.with_pattern.developer.Developer;
 import com.example.patterns.creational.factory_method.with_pattern.developer.KotlinDeveloper;
 
-public class KotlinDeveloperFactory implements DeveloperFactory{
+public class KotlinDeveloperFactory extends DeveloperFactory{
 
     @Override
     public Developer createDeveloper() {
-        return new KotlinDeveloper();
+        String name = "Lekha";
+        return new KotlinDeveloper(name);
     }
 }

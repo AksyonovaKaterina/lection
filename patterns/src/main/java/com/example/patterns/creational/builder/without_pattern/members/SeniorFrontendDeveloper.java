@@ -1,4 +1,4 @@
-package com.example.patterns.creational.builder.with_pattern.members;
+package com.example.patterns.creational.builder.without_pattern.members;
 
 public class SeniorFrontendDeveloper {
     public final String name;

@@ -12,11 +12,10 @@ public class JavaBackendTeam implements Team {
     private QA qa;
     private BusinessAnalyst analyst;
 
-    public JavaBackendTeam() {
-        TeamFactory factory = new JavaBackendTeamFactory();
-        developer = factory.getDeveloper();
-        qa = factory.getQA();
-        analyst = factory.getAnalyst();
+    public JavaBackendTeam(Developer developer, QA qa, BusinessAnalyst analyst) {
+        this.developer = developer;
+        this.qa = qa;
+        this.analyst = analyst;
     }
 
     public void developApp() {
@@ -30,7 +29,7 @@ public class JavaBackendTeam implements Team {
         analyst.analyzeRequirements();
         developer.writeCode();
         qa.test();
-        System.out.printf("Sprint #%d ended\n", i);
+        System.out.printf("Sprint #%d ended\n\n", i);
     }
 
 }
